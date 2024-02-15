@@ -8,8 +8,8 @@ const CategoryItem = ( { category, setCategorySelected }) => {
                 <Text style= {styles.text}> {category} </Text>
             </Pressable>
         </Card>
-    )
-}
+    );
+};
 export default CategoryItem;
 
 const styles = Stylesheet.create({

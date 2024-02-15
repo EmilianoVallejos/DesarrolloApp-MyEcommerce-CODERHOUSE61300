@@ -1,22 +1,36 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
+import { StyleSheet, View, TextInput, Pressable } from 'react-native';
 import {AntDesign} from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 
 
+const Search = ({ onSearch }) => {
+  const [input, setInput] = useState("");
 
-const Search = ({keyword, onSearch}) => {
+  const handleSearch = () => {
+    if (input) {
+      onSearch(input);
+    }
+  };
+
+  const removeInput = () => {
+    setInput("");
+  };
 
   return (
     <View style={styles.container}>
       <View style={{flexDirection:'row', justifyContent: 'center', alignItems: 'center'}}  > 
         <TextInput 
-            onChangeText={onSearch}
-            value={keyword} 
+            onChangeText={setInput}
+            value={input} 
             style={styles.input} 
             placeholder='Busque su producto'
         />
         <Pressable> 
             <AntDesign name="search1" size={25} color="green" />
+        </Pressable>
+        <Pressable onPress={removeInput}>
+          <Entypo name="circle-with-cross" size={25} color="black" />
         </Pressable>
       </View>
     </View>
