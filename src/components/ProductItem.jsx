@@ -1,4 +1,4 @@
-import { Stylesheet, Text} from "react-native";
+import { Stylesheet, Text} from 'react-native';
 import Card from "./Card";
 
 const ProductItem = ({product}) => {
@@ -10,7 +10,7 @@ const ProductItem = ({product}) => {
 };
 export default ProductItem;
 
-const styles= Stylesheet.create ({
+const styles = StyleSheet.create({
     text: {
         fontSize: 25,
     },

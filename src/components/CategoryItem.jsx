@@ -1,4 +1,4 @@
-import { Pressable, Stylesheet, Text} from "react-native";
+import { Pressable, Stylesheet, Text} from 'react-native';
 import Card from "./Card";
 
 const CategoryItem = ( { category, setCategorySelected }) => {
@@ -12,7 +12,7 @@ const CategoryItem = ( { category, setCategorySelected }) => {
 };
 export default CategoryItem;
 
-const styles = Stylesheet.create({
+const styles = StyleSheet.create({
     text: {
         fontSize: 25,
         fontFamily: 'Lato_Regular',
