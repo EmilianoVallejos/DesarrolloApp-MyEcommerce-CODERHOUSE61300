@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Pressable } from 'react-native';
 import {AntDesign} from "@expo/vector-icons";
-import { Row } from 'react-bootstrap';
+
 
 
 const Search = ({keyword, onSearch}) => {

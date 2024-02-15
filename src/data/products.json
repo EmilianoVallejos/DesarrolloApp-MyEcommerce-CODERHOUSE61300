@@ -1,0 +1,97 @@
+{
+    "categorias": [
+      {
+        "categoria": "Hamburguesas",
+        "productos": [
+          {
+            "id": 1,
+            "descripcion": "Deliciosa hamburguesa de carne con queso cheddar y bacon crujiente.",
+            "nombre": "Hamburguesa con queso y bacon",
+            "precio": 8.99,
+            "imagen": "/myecommerce/assets/hamburguesa_queso_bacon.png"
+          },
+          {
+            "id": 2,
+            "descripcion": "Hamburguesa clásica con lechuga, tomate y cebolla.",
+            "nombre": "Hamburguesa clásica",
+            "precio": 7.99,
+            "imagen": "/myecommerce/assets/hamburguesa_clasica.png"
+          },
+          {
+            "id": 3,
+            "descripcion": "Hamburguesa doble con blend de carne de res Angus y cerdo, queso cheddar y cebolla caramelizada.",
+            "nombre": "Hamburguesa doble",
+            "precio": 14.99,
+            "imagen": "/myecommerce/assets/hamburguesa_doble_blend.png"
+          },
+          {
+            "id": 4,
+            "descripcion": "Hamburguesa gourmet con carne de res Angus, queso azul y cebolla caramelizada.",
+            "nombre": "Hamburguesa gourmet",
+            "precio": 12.99,
+            "imagen": "/myecommerce/assets/hamburguesa_gourmet.png"
+          }
+        ]
+      },
+      {
+        "categoria": "Bebidas",
+        "productos": [
+          {
+            "id": 5,
+            "descripcion": "Refresco de cola frío y refrescante.",
+            "nombre": "Coca-Cola",
+            "precio": 1.99,
+            "imagen": "/myecommerce/assets/coca_cola_lata.png"
+          },
+          {
+            "id": 6,
+            "descripcion": "Agua mineral en botella.",
+            "nombre": "Agua mineral",
+            "precio": 1.49,
+            "imagen": "/myecommerce/assets/Agua-Mineral-Smartwater-Sin-Gas-591-Ml-1-797444.png"
+          },
+          {
+            "id": 7,
+            "descripcion": "Cerveza Heineken en lata.",
+            "nombre": "Heineken lata",
+            "precio": 3.49,
+            "imagen": "/myecommerce/assets/Cerveza-Lata-Heineken-473-Ml-_1.png"
+          },
+          {
+            "id": 8,
+            "descripcion": "Cerveza Heineken en botella.",
+            "nombre": "Heineken botella",
+            "precio": 5.49,
+            "imagen": "/myecommerce/assets/cerveza_botella_heineken.png"
+          }
+        ]
+      },
+      {
+        "categoria": "Hamburguesas veggies",
+        "productos": [
+          {
+            "id": 9,
+            "descripcion": "Hamburguesa vegana con una jugosa hamburguesa de lentejas, espinacas y aguacate.",
+            "nombre": "Hamburguesa vegana de lentejas",
+            "precio": 9.99,
+            "imagen": "/myecommerce/assets/hamburguesa_vegana_lentejas.png"
+          },
+          {
+            "id": 10,
+            "descripcion": "Hamburguesa vegetariana con queso de cabra, rúcula y tomate seco.",
+            "nombre": "Hamburguesa vegetariana con queso de cabra",
+            "precio": 8.99,
+            "imagen": "/myecommerce/assets/hamburguesa_vegetariana_queso_cabra.png"
+          },
+          {
+            "id": 11,
+            "descripcion": "Hamburguesa veggie de garbanzos y remolacha con salsa de tahini y espinacas frescas.",
+            "nombre": "Hamburguesa veggie de garbanzos y remolacha",
+            "precio": 10.99,
+            "imagen": "/myecommerce/assets/hamburguesa vegana-remolacha.png"
+          }
+        ]
+      }
+    ]
+  }
+  
