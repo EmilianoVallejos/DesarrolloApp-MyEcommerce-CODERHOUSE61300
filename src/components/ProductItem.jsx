@@ -1,4 +1,4 @@
-import { Stylesheet, Text} from 'react-native';
+import { StyleSheet, Text} from 'react-native';
 import Card from "./Card";
 
 const ProductItem = ({product}) => {

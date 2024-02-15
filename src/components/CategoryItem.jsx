@@ -1,4 +1,4 @@
-import { Pressable, Stylesheet, Text} from 'react-native';
+import { Pressable, StyleSheet, Text} from 'react-native';
 import Card from "./Card";
 
 const CategoryItem = ( { category, setCategorySelected }) => {
