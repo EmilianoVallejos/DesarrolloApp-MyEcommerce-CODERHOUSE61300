@@ -10,7 +10,7 @@ const ProductItem = ({product}) => {
 };
 export default ProductItem;
 
-const styles = Stylesheet.create({
+const styles= Stylesheet.create ({
     text: {
         fontSize: 25,
     },
