@@ -5,7 +5,7 @@ const CategoryItem = ( { category, setCategorySelected }) => {
     return (
         <Card style= { {marginVertical: 20 }}>
             <Pressable onPress={ ()=> setCategorySelected(category)}>
-                <Text style= {styles.text}> {category} </Text>
+                <Text style= {styles.textctgi}> {category} </Text>
             </Pressable>
         </Card>
     );
@@ -13,7 +13,7 @@ const CategoryItem = ( { category, setCategorySelected }) => {
 export default CategoryItem;
 
 const styles = StyleSheet.create({
-    text: {
+    textctgi: {
         fontSize: 25,
         fontFamily: 'Lato_Regular',
     },

@@ -18,12 +18,12 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.containersrch}>
       <View style={{flexDirection:'row', justifyContent: 'center', alignItems: 'center'}}  > 
         <TextInput 
             onChangeText={setInput}
             value={input} 
-            style={styles.input} 
+            style={styles.inputsrch} 
             placeholder='Busque su producto'
         />
         <Pressable> 
@@ -40,10 +40,10 @@ const Search = ({ onSearch }) => {
 export default Search
 
 const styles = StyleSheet.create({
-    container: {
+    containersrch: {
         flexDirection: "row"
     },
-    input: {
+    inputsrch: {
         borderRadius: 10,
         padding: 10,
         borderWidth: 1,
