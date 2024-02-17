@@ -9,7 +9,7 @@ function ItemListCategories ({category}){
     const [products, setProducts] = useState ([]);
     const [keyword, setKeyword] = useState ('');
     
-    useEffect(()=>{
+    useEffect(()=> {
         if (category) {
             const products = allProducts.filter( (product)=> product.category === category)
             const filteredProducts = products.filter( (product) => 
@@ -24,7 +24,7 @@ function ItemListCategories ({category}){
     }, [category, keyword])
 
     return (
-        <View>
+        <View style={styles.container}>
             <Search onSearch={setKeyword} />
             <Text style={ {fontSize: 30}}> Lista de categorías </Text>
             <FlatList 
