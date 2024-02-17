@@ -5,7 +5,7 @@ import Categories from '../components/Categories';
 function Home ({setCategorySelected}) {
     return (
         <View style={ styles.container }>
-            <Header title={'Inicio'}/>
+            <Header title={"Inicio"}/>
             <Categories setCategorySelected= {setCategorySelected}/>
         </View>
     );
