@@ -30,7 +30,7 @@ export default function App() {
         flex: 1,
         backgroundColor: "#ededed",
         alignItems: "center",
-        paddingTop: Constants.statusBarHeight,
+      
       },
     });
 
