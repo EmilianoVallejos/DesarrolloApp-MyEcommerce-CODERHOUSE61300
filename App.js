@@ -1,5 +1,6 @@
 import { View, StyleSheet } from "react-native";
 import { useState } from 'react';
+import Constants from "expo-constants";
 import Home from './src/screens/Home';
 import ItemListCategories from './src/screens/ItemListCategories';
 import { useFonts } from 'expo-font';
@@ -30,7 +31,7 @@ export default function App() {
         flex: 1,
         backgroundColor: "#ededed",
         alignItems: "center",
-      
+        paddingTop: Constants.statusBarHeight,
       },
     });
 
