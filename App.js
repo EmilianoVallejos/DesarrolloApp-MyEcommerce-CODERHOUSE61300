@@ -1,37 +1,13 @@
-import { View, StyleSheet } from "react-native";
-import { useState } from 'react';
-import Constants from "expo-constants";
-import Home from './src/screens/Home';
-import ItemListCategories from './src/screens/ItemListCategories';
-import { useFonts } from 'expo-font';
-import { fonts } from './src/global/fonts';
-
+import { useFonts } from "expo-font";
+import { fonts } from "./src/global/fonts";
+import Navigator from "./src/navigation/Navigator";
 
 export default function App() {
-  
   const [fontsLoaded] = useFonts(fonts);
 
-  const [categorySelected, setCategorySelected] = useState('');
-
-  if (!fontsLoaded){ 
-    return null
+  if (!fontsLoaded) {
+    return null;
   }
-  return ( 
-    <View style={styles.container}>
-    {categorySelected ? (
-      <ItemListCategories category = {categorySelected} />
-    ): ( 
-      <Home setCategorySelected= {setCategorySelected}/>
-    )}
-    </View>); 
-    }
 
-    const styles = StyleSheet.create({
-      container: {
-        flex: 1,
-        backgroundColor: "#ededed",
-        alignItems: "center",
-        paddingTop: Constants.statusBarHeight,
-      },
-    });
-
+  return <Navigator />
+}

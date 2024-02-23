@@ -1,15 +1,15 @@
-import {  View, StyleSheet} from 'react-native';
-import Header from '../components/Header';
-import Categories from '../components/Categories';
+import { Text, View, StyleSheet } from "react-native";
+import Header from "../components/Header";
+import Categories from "../components/Categories";
 
-function Home ({setCategorySelected}) {
-    return (
-        <View style={ styles.container }>
-            <Header title={"Inicio"}/>
-            <Categories setCategorySelected= {setCategorySelected}/>
-        </View>
-    );
+function Home({navigation}) {
+  return (
+    <View style={styles.container}>
+      <Categories navigation={navigation}/>
+    </View>
+  );
 }
+
 export default Home;
 
 const styles = StyleSheet.create({
