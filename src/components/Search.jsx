@@ -4,6 +4,7 @@ import {AntDesign} from "@expo/vector-icons";
 import { Entypo } from "@expo/vector-icons";
 
 
+
 const Search = ({ onSearch }) => {
   const [input, setInput] = useState("");
 
@@ -27,7 +28,7 @@ const Search = ({ onSearch }) => {
             placeholder='Busque su producto'
         />
         <Pressable> 
-            <AntDesign name="search1" size={25} color="green" />
+            <AntDesign name="search1" size={25} color="green"  />
         </Pressable>
         <Pressable onPress={removeInput}>
           <Entypo name="circle-with-cross" size={25} color="black" />
@@ -49,9 +50,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         width: "70%",
         fontSize: 20,
-        marginTop: 50,
         marginLeft: 30,
     },
+    
 
 
 })

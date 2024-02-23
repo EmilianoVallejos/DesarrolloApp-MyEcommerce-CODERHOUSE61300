@@ -2,6 +2,7 @@ import { Pressable, StyleSheet, Text } from "react-native";
 import Card from "./Card";
 import { colors } from "../global/colors";
 
+
 const CategoryItem = ({ category, navigation }) => {
   return (
     <Pressable onPress={() => navigation.navigate("ItemListCategories", {category})}>
@@ -16,8 +17,8 @@ export default CategoryItem;
 
 const styles = StyleSheet.create({
     textctgi: {
-        fontSize: 25,
-        fontFamily: 'Lato_Regular',
+        fontSize: 30,
+        fontFamily: 'Lato_Bold',
     },
     cardContainer: {
         marginHorizontal: 30,
@@ -25,7 +26,7 @@ const styles = StyleSheet.create({
         padding: 10,
         justifyContent: "center",
         alignItems: "flex-start",
-        backgroundColor: colors.blue_200,
+        backgroundColor: "#e6aa76",
         borderRadius: 10,
       },
 });

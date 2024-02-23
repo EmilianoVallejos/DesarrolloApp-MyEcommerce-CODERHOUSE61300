@@ -13,14 +13,16 @@ export default Header;
 const styles = StyleSheet.create ({
     container:{
         flex: 1,
-        backgroundColor: colors.blue_300,
+        backgroundColor: colors.blue_400,
         width: "100%",
-        paddingVertical: 8    
+        paddingVertical: 8, 
+        marginTop: 30   
     },
     text: {
         fontSize: 30,
         color: "white",
         textAlign: 'center',
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        fontFamily: 'Lato_Black',
     },
 });

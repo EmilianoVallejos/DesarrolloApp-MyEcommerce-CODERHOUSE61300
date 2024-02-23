@@ -15,7 +15,8 @@ export default Home;
 const styles = StyleSheet.create({
     container: {
     paddingTop: 30,
-    marginTop: 50,
+    marginTop: 20,
+    marginBottom: 10,
     flex: 1,
     width: "100%",
     alignItems: "center",

@@ -27,7 +27,7 @@ const ItemDetail = ({ navigation, route }) => {
             <Text style={styles.descriptionText}>{product.description}</Text>
             <Text style={styles.descriptionTextPrice}>${product.price}</Text>
             <Pressable style={styles.buy}>
-              <Text style={styles.buyText}>Buy now</Text>
+              <Text style={styles.buyText}>Adquiéralo</Text>
             </Pressable>
           </View>
         </View>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: 400,
-    marginVertical: 15,
+    marginVertical: 35,
   },
   textContainer: {
     flexDirection: "column",
@@ -65,13 +65,13 @@ const styles = StyleSheet.create({
     padding: 6,
   },
   descriptionText: {
-    fontFamily: "InterRegular",
+    fontFamily: "Lato_Regular",
     fontSize: 16,
     color: "black",
     paddingVertical: 4,
   },
   descriptionTextPrice: {
-    fontFamily: "InterRegular",
+    fontFamily: "Lato_BlackItalic",
     fontSize: 25,
     color: "black",
     paddingVertical: 6,
@@ -79,10 +79,10 @@ const styles = StyleSheet.create({
   buy: {
     padding: 10,
     borderRadius: 6,
-    backgroundColor: colors.blue_300,
+    backgroundColor: '#008080',
   },
   buyText: {
-    fontFamily: "InterBold",
+    fontFamily: "Lato_BlackItalic",
     fontSize: 22,
     color: "white",
   },

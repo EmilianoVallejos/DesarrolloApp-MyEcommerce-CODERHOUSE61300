@@ -12,13 +12,13 @@ export default Card;
 
 const styles = StyleSheet.create({
     containercrd: {
-        shadowColor: "#000",
+        shadowColor: "hsla(238.84615384615384, 86.66666666666667%, 52.94117647058824%, 0.767)",
         shadowOffset: {
             width: 0,
-            height: 2,
+            height: 7,
         },
-        shadowOpacity: 0.23,
-        shadowRadius: 2.62,
-        elevation: 4,
+        shadowOpacity: 9,
+        shadowRadius: 9,
+        elevation: 9,
     },
 });
