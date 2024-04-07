@@ -1,0 +1,69 @@
+[
+
+    {
+    
+    "id": 1,
+    
+    "userId": 2,
+    
+    "createdAt": 1679869276580,
+    
+    "items": [
+    
+    {
+        "category": "Hamburguesas",
+        "id": 1,
+        "description": "Deliciosa hamburguesa de carne con queso cheddar y bacon crujiente.",
+        "title": "Hamburguesa con queso y bacon",
+        "stock": 55,
+        "price": 8.99,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635639/img/hamburguesa_queso_bacon_p3bog4.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635639/img/hamburguesa_queso_bacon_p3bog4.png",
+        "quantity": 2    
+    },
+    {
+        "category": "Bebidas",
+        "id": 5,
+        "description": "Refresco de cola frío y refrescante.",
+        "title": "Coca-Cola",
+        "stock": 62,
+        "price": 1.99,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/coca_cola_lata_xmklkd.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/coca_cola_lata_xmklkd.png",
+        "quantity": 2
+    }    
+    ]},
+    {
+    
+    "id": 2,
+    
+    "userId": 2,
+    
+    "createdAt": 1679832276580,
+    
+    "items": [
+    {
+        "category": "Hamburguesas veggies",
+        "id": 9,
+        "description": "Hamburguesa vegana con una jugosa hamburguesa de lentejas, espinacas y aguacate.",
+        "title": "Hamburguesa vegana de lentejas",
+        "stock": 75,
+        "price": 9.99,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635639/img/hamburguesa_vegana_lentejas_zo2tpc.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635639/img/hamburguesa_vegana_lentejas_zo2tpc.png",   
+        "quantity": 1
+    
+    },
+    {
+        "category": "Bebidas alcohólicas",
+        "id": 8,
+        "description": "Cerveza Heineken en botella.",
+        "title": "Heineken botella",
+        "stock": 32,
+        "price": 5.49,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/cerveza_botella_heineken_lks3nn.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/cerveza_botella_heineken_lks3nn.png",   
+        "quantity": 3    
+    }
+    ]}    
+]

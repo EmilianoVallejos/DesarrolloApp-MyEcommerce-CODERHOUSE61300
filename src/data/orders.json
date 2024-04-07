@@ -1,0 +1,69 @@
+[
+
+    {
+    
+    "id": 1,
+    
+    "userId": 2,
+    
+    "createdAt": 1679869276580,
+    
+    "items": [
+    
+    {
+        "category": "Hamburguesas",
+        "id": 4,
+        "description": "Hamburguesa gourmet con carne de res Angus, queso azul y cebolla caramelizada.",
+        "title": "Hamburguesa gourmet",
+        "stock": 65,
+        "price": 12.99,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/hamburguesa_gourmet_r9cpuz.png", 
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/hamburguesa_gourmet_r9cpuz.png",
+        "quantity": 2    
+    },
+    {
+        "category": "Bebidas",
+        "id": 6,
+        "description": "Agua mineral en botella.",
+        "title": "Agua mineral",
+        "stock": 52,
+        "price": 1.49,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/Agua-Mineral-Smartwater-Sin-Gas-591-Ml-1-797444_uprwwn.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/Agua-Mineral-Smartwater-Sin-Gas-591-Ml-1-797444_uprwwn.png",
+        "quantity": 2
+    }    
+    ]},
+    {
+    
+    "id": 2,
+    
+    "userId": 2,
+    
+    "createdAt": 1679832276580,
+    
+    "items": [
+    {
+        "category": "Hamburguesas",
+        "id": 3,
+        "description": "Hamburguesa doble con blend de carne de res Angus y cerdo, queso cheddar y cebolla caramelizada.",
+        "title": "Hamburguesa doble",
+        "stock": 35,
+        "price": 14.99,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/hamburguesa_doble_blend_sf7ysv.png",
+        "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/hamburguesa_doble_blend_sf7ysv.png",   
+        "quantity": 1
+    
+    },
+    {
+        "category": "Snacks y acompañamientos",
+        "id":12,
+        "description":"sabrosos nachos bañados en cheddar",
+        "title":"nachos y cheddar",
+        "stock":18,
+        "price":3.50,
+        "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1709602907/nachos_evi6ub.png" ,
+        "image":"https://res.cloudinary.com/do89kiijr/image/upload/v1709602907/nachos_evi6ub.png",   
+        "quantity": 3    
+    }
+    ]}    
+]

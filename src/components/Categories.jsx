@@ -1,12 +1,18 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
-import categories from "../data/categories.json";
+import { FlatList, StyleSheet, View } from "react-native";
 import CategoryItem from "./CategoryItem";
+import Counter from "./Counter";
+import { useGetCategoriesQuery } from "../services/shopService";
 
 function Categories({navigation}) {
+  
+
+  const { data, isLoading, error } = useGetCategoriesQuery();
+  
   return (
     <View style={styles.container}>
+      <Counter/>
       <FlatList
-        data={categories}
+        data={data}
         renderItem={({ item }) => (
           <CategoryItem navigation={navigation} category={item} />
         )}

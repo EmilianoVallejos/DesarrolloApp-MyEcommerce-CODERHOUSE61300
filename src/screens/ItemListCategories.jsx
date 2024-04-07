@@ -1,29 +1,22 @@
 import { useEffect, useState } from "react";
-import { View, FlatList, StyleSheet, Text, Pressable } from "react-native";
-import allProducts from "../data/products.json";
+import { View, FlatList, StyleSheet } from "react-native";
 import ProductItem from "../components/ProductItem";
 import Search from "../components/Search";
+import { useSelector } from "react-redux";
+import { useGetProductsByCategoryQuery } from "../services/shopService";
 
 function ItemListCategories({ navigation, route }) {
   const [products, setProducts] = useState([]);
   const [keyword, setKeyword] = useState("");
 
-  const { category } = route.params;
+  const category = useSelector((state)=> state.shopReducer.value.categorySelected);
+  const { data: productsFilteredByCategory, isLoading, error} = useGetProductsByCategoryQuery(category)
 
   useEffect(() => {
-    if (category) {
-      const products = allProducts.filter((product) => product.category === category);
-      const filteredProducts = products.filter((product) =>
-        product.title.includes(keyword)
-      );
-      setProducts(filteredProducts);
-    } else {
-      const filteredProducts = allProducts.filter((product) =>
-        product.title.includes(keyword)
-      );
-      setProducts(filteredProducts);
-    }
-  }, [category, keyword]);
+    const productsFiltered = productsFilteredByCategory.filter((product)=>
+    product.title.includes(keyword));
+    setProducts(productsFiltered);  
+  }, [productsFilteredByCategory, keyword]);
 
   return (
     <View style={styles.container}>

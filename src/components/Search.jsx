@@ -27,7 +27,7 @@ const Search = ({ onSearch }) => {
             style={styles.inputsrch} 
             placeholder='Busque su producto'
         />
-        <Pressable> 
+        <Pressable onPress={handleSearch} > 
             <AntDesign name="search1" size={25} color="green"  />
         </Pressable>
         <Pressable onPress={removeInput}>
