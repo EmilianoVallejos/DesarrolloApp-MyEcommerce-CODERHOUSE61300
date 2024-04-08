@@ -10,17 +10,17 @@ function Header ( { title }) {
 
     const onLogout = async ()=> {
         dispatch(logout())
-        const deletedSession = await deleteSession({localId})
-    }
+        const deletedSession = await deleteSession({localId});
+    };
 
     return (
         <View style={styles.container}>
             <Text style= { styles.text}> {title} </Text>
-            {user ? ( 
+            {user && ( 
             <Pressable style={styles.logout} onPress={onLogout}> 
                 <AntDesign name="logout" size={30} color="black"/>
             </Pressable> 
-            ): null}
+            )}
         </View>
     );
 }

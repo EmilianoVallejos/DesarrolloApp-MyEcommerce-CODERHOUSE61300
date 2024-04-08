@@ -5,6 +5,7 @@ import AuthStack from './AuthStack'
 import { NavigationContainer } from '@react-navigation/native'
 import { useDispatch, useSelector } from 'react-redux'
 import { useGetProfileImageQuery } from '../services/shopService'
+import { setProfileImage, setUser } from "../features/auth/authSlice";
 import { fetchSession } from '../db'
 
 const MainNavigator = () => {
@@ -30,13 +31,11 @@ const MainNavigator = () => {
       if(data){
         dispatch(setProfileImage(data.image))
       }
-    }, [data])
-
-
+    }, [data]);
 
   return  ( 
   <NavigationContainer>
-    {user ? <TabNavigator/> : <AuthStack /> }  
+    {user?<TabNavigator/> : <AuthStack /> }  
   </NavigationContainer>
   );
 };

@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View, SubmitButton, ActivityIndicator } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import InputForm from '../components/InputForm'
 import { useLoginMutation } from '../services/authService';
 import { useDispatch } from 'react-redux';
@@ -15,7 +15,7 @@ const Login = ({navigation}) => {
   const [ errorPassword, setErrorPassword] = useState("");
   const [triggerSignin, result] = useLoginMutation();
 
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   
   useEffect(()=>{
     if(result.data){
@@ -32,8 +32,8 @@ const Login = ({navigation}) => {
 
   const onSubmit = ()=>{
     try {
-    loginSchema.validateSync({email, password})   
-    triggerSignin({email, password})        
+    loginSchema.validateSync({email, password});   
+    triggerSignin({email, password});        
   } catch(err){
     switch(err.path){
         case "email":
@@ -66,6 +66,6 @@ const Login = ({navigation}) => {
     </View>
   )
 }
-export default Login
+export default Login;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

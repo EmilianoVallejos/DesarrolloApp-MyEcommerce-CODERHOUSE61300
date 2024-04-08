@@ -1,15 +1,4 @@
 [
-
-    {
-    
-    "id": 1,
-    
-    "userId": 2,
-    
-    "createdAt": 1679869276580,
-    
-    "items": [
-    
     {
         "category": "Hamburguesas",
         "id": 1,
@@ -31,17 +20,7 @@
         "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/coca_cola_lata_xmklkd.png",
         "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635638/img/coca_cola_lata_xmklkd.png",
         "quantity": 2
-    }    
-    ]},
-    {
-    
-    "id": 2,
-    
-    "userId": 2,
-    
-    "createdAt": 1679832276580,
-    
-    "items": [
+    },    
     {
         "category": "Hamburguesas veggies",
         "id": 9,
@@ -64,6 +43,4 @@
         "thumbnail": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/cerveza_botella_heineken_lks3nn.png",
         "image": "https://res.cloudinary.com/do89kiijr/image/upload/v1708635637/img/cerveza_botella_heineken_lks3nn.png",   
         "quantity": 3    
-    }
-    ]}    
-]
+    }]

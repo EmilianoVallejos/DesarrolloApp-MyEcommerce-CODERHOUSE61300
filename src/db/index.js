@@ -6,7 +6,7 @@ export const init = ()=> {
     const promise = new Promise((resolve, reject)=>{
         db.transaction((tx)=>{
             tx.executeSql(
-                "CREATE TABLE IF NOT EXIST sessions (localID TEXT PRIMARY KEY NOT NULL, email TEXT NOT NULL, token TEXT NOT NULL)",
+                "CREATE TABLE IF NOT EXISTS sessions (localId TEXT PRIMARY KEY NOT NULL, email TEXT NOT NULL, token TEXT NOT NULL)",
                 [],
                 ()=> resolve(),
                 (_, error)=>{
@@ -15,8 +15,9 @@ export const init = ()=> {
             );
         });
     });
-    return  promise;
+    return promise; 
 };
+
 
 export const insertSession = ({email, localId, token})=>{
     const promise = new Promise((accept, reject)=> {
@@ -29,8 +30,9 @@ export const insertSession = ({email, localId, token})=>{
             );
         });
     });
-    return  promise;
+    return promise; 
 };
+
 
 export const fetchSession = ()=>{
     const promise = new Promise ((resolve, reject)=>{
