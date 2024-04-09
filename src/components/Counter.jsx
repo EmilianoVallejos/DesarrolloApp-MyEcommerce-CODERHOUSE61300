@@ -1,30 +1,52 @@
+import React from 'react';
 import { StyleSheet, View, Text, Pressable } from 'react-native'
 import { increment, decrement, incrementByAmount, reset} from '../features/counter/counterSlice'
 import { useDispatch, useSelector } from 'react-redux';
 
 
-const Counter = () => {
+const Counter = ({ stock, onChangeQuantity }) => {
     const count = useSelector((state)=> state.counterReducer.value);
 
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
-
-  return (
+    const decrementCount = () => {
+        if (count > 1) {
+          dispatch(decrement());
+          onChangeQuantity(count - 1);
+        }
+      };
+    
+      const incrementCount = () => {
+        if (count < stock) {
+          dispatch(increment());
+          onChangeQuantity(count + 1);
+        }
+      };
+    
+      const resetCount = () => {
+        dispatch(reset());
+        onChangeQuantity(1); 
+      };
+      
+    return (
     <View style={styles.container}>
         <View style={styles.buttonsContainer}> 
-            <Pressable onPress={()=>dispatch(decrement())} style={styles.button}> 
+            <Pressable onPress={decrementCount} style={styles.button}> 
                 <Text style={styles.buttontext}> - </Text>
             </Pressable>
             <Text> {count} </Text>
-            <Pressable onPress={()=>dispatch(increment())} style={styles.button}> 
+            <Pressable onPress={incrementCount} style={styles.button}> 
                 <Text style={styles.buttonText}> + </Text>
+            </Pressable>
+            <Pressable onPress={resetCount} style={styles.button}>
+                <Text style={styles.buttonText}>x</Text>
             </Pressable>
         </View>
     </View>
-  )
-}
+    );
+};
 
-export default Counter
+export default Counter;
 
 const styles = StyleSheet.create({
     container: {

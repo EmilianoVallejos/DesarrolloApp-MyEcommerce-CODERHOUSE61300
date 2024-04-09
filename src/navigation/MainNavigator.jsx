@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View, ActivityIndicator } from 'react-native'
 import React, { useEffect } from 'react'
 import TabNavigator from './TabNavigator'
 import AuthStack from './AuthStack'
@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useGetProfileImageQuery } from '../services/shopService'
 import { setProfileImage, setUser } from "../features/auth/authSlice";
 import { fetchSession } from '../db'
+
 
 const MainNavigator = () => {
     const {user, localId } = useSelector( state => state.authReducer.value.user)
@@ -33,7 +34,23 @@ const MainNavigator = () => {
       }
     }, [data]);
 
-  return  ( 
+    if (isLoading) {
+      return (
+        <View>
+          <ActivityIndicator size="large" color="#0000ff" />
+        </View>
+      );
+    }
+  
+    if (error) {
+      return (
+        <View>
+          <View>Error al cargar</View>
+        </View>
+      );
+    }
+    
+    return  ( 
   <NavigationContainer>
     {user?<TabNavigator/> : <AuthStack /> }  
   </NavigationContainer>

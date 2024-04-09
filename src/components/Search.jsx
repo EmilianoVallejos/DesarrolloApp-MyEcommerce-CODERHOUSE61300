@@ -16,6 +16,8 @@ const Search = ({ onSearch }) => {
 
   const removeInput = () => {
     setInput("");
+    onSearch("");
+    
   };
 
   return (

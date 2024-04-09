@@ -4,7 +4,7 @@ import ItemDetail from "../screens/ItemDetail";
 import ItemListCategories from "../screens/ItemListCategories";
 import Header from "../components/Header";
 
-const Navigator = () => {
+const ShopStack = () => {
   const Stack = createNativeStackNavigator();
 
   return (
@@ -31,4 +31,4 @@ const Navigator = () => {
   );
 };
 
-export default Navigator;
+export default ShopStack;

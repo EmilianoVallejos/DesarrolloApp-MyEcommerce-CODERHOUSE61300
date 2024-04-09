@@ -1,6 +1,5 @@
 import { createNativeStackNavigator} from "@react-navigation/native-stack"
 import Cart from "../screens/Cart";
-//import { Header } from "@react-navigation/stack";
 import Header from "../components/Header";
 
 

@@ -17,6 +17,13 @@ const Login = ({navigation}) => {
 
   const dispatch = useDispatch();
   
+  useEffect(() => {
+    const userAuthenticated = false;
+    if (userAuthenticated) {
+        navigation.replace("Home");
+    }
+}, []);
+
   useEffect(()=>{
     if(result.data){
         dispatch(setUser(result.data));

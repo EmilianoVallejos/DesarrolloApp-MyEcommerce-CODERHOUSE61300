@@ -46,12 +46,29 @@ export const cartSlice = createSlice({
         };
       }
     },
-    removeItem: (state, action) => {
-      //Logica para remover el producto
+    clearCart(state) {
+      state.value = {
+        ...state.value,
+        items: [],
+        total: 0,
+        updatedAt: new Date().toLocaleString(),
+      };
     },
+    removeItem: (state, action) => {
+      const productIdToRemove = action.payload.productId;
+      state.value = {
+        ...state.value,
+        items: state.value.items.filter((item) => item.id !== productIdToRemove),
+        total: state.value.items.reduce(
+          (acc, currentItem) => (acc += currentItem.price * currentItem.quantity),
+          0
+        ),
+        updatedAt: new Date().toLocaleString(),
+    };
   },
+},
 });
 
-export const { addItem, removeItem } = cartSlice.actions;
+export const { addItem, removeItem, clearCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
